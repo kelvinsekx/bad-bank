@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout"
+import Home from "./pages/Home";
+import AllData from "./pages/all-data";
+import CreateAccount from "./pages/create-account";
+import Withdraw from "./pages/withdraw"
+import Deposit from "./pages/deposit";
+import NoPage from "./pages/NoPage";
 
-function App() {
+import "./App.css"
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route 
+            index 
+            element={<Home />} 
+          />
+          <Route 
+            path="all-data" 
+            element={<AllData />} 
+          />
+          <Route 
+            path="create-account" 
+            element={<CreateAccount />} 
+          />
+          <Route 
+            path="withdraw" 
+            element={<Withdraw />} 
+          />
+          <Route 
+            path="deposit" 
+            element={<Deposit />} 
+          />
+          <Route 
+            path="*" 
+            element={<NoPage />} 
+          />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;

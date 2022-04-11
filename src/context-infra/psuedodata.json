@@ -1,0 +1,20 @@
+[
+    {
+        "email": "jane@me.com",
+        "name": "Jane Doe",
+        "password": "Access123",
+        "balance": 200
+    },
+    {
+        "email": "peter@mit.edu",
+        "name": "Peter Parker",
+        "password": "Passcode321",
+        "balance":120
+    },
+    {
+        "email": "jane@me.com",
+        "name": "John Smith",
+        "password": "Letmein33",
+        "balance": 500
+    }
+]

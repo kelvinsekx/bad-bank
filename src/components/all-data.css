@@ -1,0 +1,25 @@
+
+.table-main{
+    display: flex;
+    justify-content: center;
+}
+.table{
+    border: 1px solid #000;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    min-height: 10rem;
+
+}
+.table-row{
+    display: flex;
+    min-height: 4rem;
+}
+.table-row> div{
+    width: 15rem;
+    font-size: 1.4rem;
+    padding-left: 0.4em;
+}
+.border-bottom{
+    border-bottom: 1px solid #000;
+}
