@@ -7,6 +7,10 @@ How to use
 
 The project is bootstrapped with create-react-app on react and context.
 
+Here is a gif on the app functionalities
+
+![msedge_HKE7nnSKdN](https://user-images.githubusercontent.com/51183064/162933838-0ed7b6de-8975-44fc-a750-e3778f4ebf8c.gif)
+
 ## CHALLENGES FACED IN THE APP
 - time was a major constraint for me and how I resolved it was to use rudement functions to get things done although at cleaner code expense. Altogether, I feel the code is clean enough to read through with strong functional programming principles
 - To avoid prop drills, I had to turn to use react context unlike passing props around which I used on the other dorm project
